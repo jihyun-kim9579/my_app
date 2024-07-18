@@ -1,5 +1,11 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+var cors = require('cors');
+const app = express();
+
+app.use(cors());
+
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
 
 app.get('/', function (req, res) {
   res.sendFile (__dirname + "/public/home.html");
@@ -7,8 +13,13 @@ app.get('/', function (req, res) {
 app.get('/main', function (req, res) {
   res.sendFile (__dirname + "/public/main.html");
 });
-app.get('/contact', function (req, res) {
-  res.sendFile (__dirname + "/public/contact.html");
+ // req: request[요청]
+ // res: response[응답]
+app.post('/contact', function (req, res) {
+      console.log(req.body);
+    res.sendFile (__dirname + "/public/contact.html");
 });
 
-app.listen(3000)
+app.listen(3000, function () {
+  console.log('CORS-enabled web server listening on port 3000')
+});
