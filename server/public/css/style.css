@@ -1,4 +1,53 @@
 @charset "utf-8";
-body{
-    background-color: skyblue;
+* {
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize; /*첫 글자가 대문자로 바뀜.*/
+    margin:0 10px; 
+}
+
+.site_header {
+    width: 1280px;
+    margin: 50px auto;
+    display: flex; /*표시: 플렉스, 옆으로 나란히 */
+    justify-content: space-between; /* 저스티파이는 왼쪽 오른쪽*/
+    align-items: center; /*얼라인 아이템스는 위 아래 배치 */
+}
+
+.site_visual {
+    height: 500px;
+    overflow: hidden;
+    background-image: url(../images/welcome.jpg);
+    background-position:  30% 20%;
+    background-size: cover;
+    
+}
+.ranking {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.ranking_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tabs {
+    display: flex;
+}
+/* 그룹 선택자: , */
+.tabs h1, .tabs h2{
+    font-size: 20px;
+}
+.tabs h2 {
+    color:lightgray;
+}
+.all {
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 5px 10px; 
 }
