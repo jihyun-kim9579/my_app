@@ -19,10 +19,10 @@ a {
 }
 
 .site_visual {
-    height: 500px;
+    height: 700px;
     overflow: hidden;
     background-image: url(../images/welcome.jpg);
-    background-position:  30% 20%;
+    background-position:  100% 40%;
     background-size: cover;
     
 }
