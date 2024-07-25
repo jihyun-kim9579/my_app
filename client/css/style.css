@@ -11,8 +11,8 @@ body{
 .login_form div{
     margin: 10px 0
 }
-.w_30{
-    width:30%;
+.w_18{
+    width: 18%;
 }
 .d-flex{
     display:flex;
@@ -25,5 +25,5 @@ body{
     flex: 1;
 }
 .flex-3{
-    flex: 2;
+    flex: 3;
 }
